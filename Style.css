@@ -1,0 +1,23 @@
+
+body {
+	font-family: sans-serif;
+	background: #000000;
+	color: #DCD;
+}
+
+#container {
+	height: 700px;
+	width: 1000px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	padding: 1px;
+}
+
+#container p {
+	font-size: 24px;
+	color: red;
+}
+
+#container p span {
+	margin: 0 100px;
+}
