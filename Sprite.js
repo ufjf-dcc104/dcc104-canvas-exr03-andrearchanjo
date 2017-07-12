@@ -30,8 +30,8 @@ Sprite.prototype.desenhar = function (ctx) {
   ctx.fill();
   ctx.strokeStyle = "black";
   ctx.stroke();
-  ctx.strokeStyle = "grey";
-  ctx.strokeRect(-this.width/2, -this.height/2, this.width, this.height);
+  /*ctx.strokeStyle = "grey";
+  ctx.strokeRect(-this.width/2, -this.height/2, this.width, this.height);*/
   ctx.restore();
 };
 
@@ -42,12 +42,12 @@ Sprite.prototype.desenharImg = function (ctx, img) {
   ctx.rotate(Math.PI/2);
   ctx.fillStyle = this.color;
   ctx.drawImage(img, -this.width/2, -this.height/2, this.width, this.height);
-  if(this.debug){
+  /*if(this.debug){
     //debug sprite
     ctx.strokeStyle = "black";
     ctx.strokeRect(-this.width/2, -this.height/2, this.width, this.height);
    //ctx.fillRect(-this.width/2, -this.height/2, this.width, this.height);
-  }
+  }*/
   ctx.restore();
 };
 

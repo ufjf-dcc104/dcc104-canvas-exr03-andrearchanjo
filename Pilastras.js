@@ -53,8 +53,8 @@ Pilastra.prototype.desenhar = function (ctx) {
   ctx.fill();
   ctx.strokeStyle = "black";
   ctx.stroke();
-  ctx.strokeStyle = "grey";
-  ctx.strokeRect(-this.width/2, -this.height/2, this.width, this.height);
+  /*ctx.strokeStyle = "grey";
+  ctx.strokeRect(-this.width/2, -this.height/2, this.width, this.height);*/
   ctx.restore();
 };
 
@@ -64,10 +64,10 @@ Pilastra.prototype.desenharColisaoComPonto = function (ctx) {
   ctx.rotate(this.angle*2*Math.PI/360);
   ctx.fillStyle = "red";
   //ctx.fillRect(-this.widthCenter/2, -this.heightCenter/2, this.widthCenter, this.heightCenter);
-  if(this.debug){
+  /*if(this.debug){
   ctx.strokeStyle = "black";
   ctx.strokeRect(-this.widthCenter/2, -this.heightCenter/2, this.widthCenter, this.heightCenter);
-  }
+  }*/
   ctx.restore();
 };
 
